@@ -9,6 +9,10 @@ export class myAge {
   getAgeVenus() {
   }
   getAgeEarth() {
+    let yearInfo = new Date();
+    let currentYear = yearInfo.getFullYear();
+    let yourAge = currentYear - this.year;
+    return yourAge;
   }
   getAgeMars() {
   }
