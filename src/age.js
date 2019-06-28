@@ -4,6 +4,14 @@ export class myAge {
     this.expectancy = expectancy;
   }
 
+  getAgeEarth() {
+    let yourAgeInfo = [];
+    let yearInfo = new Date(); //using built-in Date object in order to get time information on earth
+    let yourAge = parseInt(yearInfo.getFullYear() - this.year); // it is the simplest calculation of age based on year of birth
+    let yourExpectancy = parseInt(this.expectancy - yourAge);
+    yourAgeInfo.push(yourAge, yourExpectancy);
+    return yourAgeInfo;
+  }
   getAgeMercury() {
     let yourAgeInfo = [];
     let yearInfo = new Date(); //using built-in Date object in order to get time information on earth
@@ -16,14 +24,6 @@ export class myAge {
     let yourAgeInfo = [];
     let yearInfo = new Date(); //using built-in Date object in order to get time information on earth
     let yourAge = parseInt((yearInfo.getFullYear() - this.year)/0.66); // it is the simplest calculation of age on Venus
-    let yourExpectancy = parseInt(this.expectancy - yourAge);
-    yourAgeInfo.push(yourAge, yourExpectancy);
-    return yourAgeInfo;
-  }
-  getAgeEarth() {
-    let yourAgeInfo = [];
-    let yearInfo = new Date(); //using built-in Date object in order to get time information on earth
-    let yourAge = parseInt(yearInfo.getFullYear() - this.year); // it is the simplest calculation of age based on year of birth
     let yourExpectancy = parseInt(this.expectancy - yourAge);
     yourAgeInfo.push(yourAge, yourExpectancy);
     return yourAgeInfo;
