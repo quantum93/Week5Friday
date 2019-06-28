@@ -1,5 +1,5 @@
-import { myDate } from './date.js';
-import './date.js';
+import { myAge } from './age.js';
+import './age.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,11 +10,11 @@ $(document).ready(function() {
     event.preventDefault();
     let year = $('#inputYear').val();
     let expectancy = $('#inputExpectancy').val();
-    let myAge = new myDate(year, expectancy);
-    $('#mercury').text(myAge.getMyAge() + " is the day of your date!");
-    $('#venus').text(myAge.getMyAge() + " is the day of your date!");
-    $('#earth').text(myAge.getMyAge() + " is the day of your date!");
-    $('#mars').text(myAge.getMyAge() + " is the day of your date!");
-    $('#jupiter').text(myAge.getMyAge() + " is the day of your date!");
+    let myAge = new myAge(year, expectancy);
+    $('#mercury').text(myAge.getAgeMercury() + " is your age on Mercury");
+    $('#venus').text(myAge.getAgeVenus() + " is your age on Venus");
+    $('#earth').text(myAge.getAgeEarth() + " is your age on Earth");
+    $('#mars').text(myAge.getAgeMars() + " is your age on Mars");
+    $('#jupiter').text(myAge.getAgeJupiter() + " is your age on Jupiter");
   });
 });

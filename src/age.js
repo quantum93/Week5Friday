@@ -1,4 +1,4 @@
-export class myDate {
+export class myAge {
   constructor(year, expectancy) {
     this.year = year;
     this.expectancy = expectancy;
