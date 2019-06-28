@@ -13,7 +13,7 @@ describe('age on earth and life expectancy from your year of birth', function() 
     expect(testObj.getAgeMars()).toEqual([31, 49]);
   });
   it('should test whether myAge.getAgeMercury propertis are functioning properly', function() {
-    expect(testObj.getAgeMercury()).toEqual([245, 165, "Mon Apr 15 2020"]);
+    expect(testObj.getAgeMercury()).toEqual([245, 165, "Mon Nov 11 2019"]);
   });
   // it('should test whether a Haiku has three lines', function() {
   //   testObj.lineChecker();
