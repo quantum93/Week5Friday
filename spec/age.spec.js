@@ -10,7 +10,7 @@ describe('age on earth and life expectancy from your year of birth', function() 
   //   expect(testObj.getAgeMercury()).toEqual([245, -165]);
   // });
   it('should test whether myAge.getAgeMars propertis are functioning properly', function() {
-    expect(testObj.getAgeMars()).toEqual([31, 49]);
+    expect(testObj.getAgeMars()).toEqual([31, 49, "Thu Jul 01 2021"]);
   });
   it('should test whether myAge.getAgeMercury propertis are functioning properly', function() {
     expect(testObj.getAgeMercury()).toEqual([245, 165, "Mon Nov 11 2019"]);

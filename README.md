@@ -23,9 +23,13 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | for surpassed expectancy, return absolute value of                                                                         |     
 | negative number for surpassed years                     | 2000, 80                    | 245, 165                           |
 | return age, year of remaining life expectancy,                                                                             |
-| and next year birthday on earth                         | 1960, 8, 15, 80             | 59, 21, "Fri Aug 14 2020"]         |
+| and next year birthday on earth                         | 1960, 8, 15, 80             | [59, 21, "Fri Aug 15 2020"]        |
 | return age, year of remaining life expectancy,                                                                             |
-| and next year birthday on earth with leap year handling | 1960, 8, 15, 80             | 59, 21, "Fri Aug 15 2020"]         |
+| and next year birthday on Mercury                       | 1960, 8, 15, 80             | [245, 165, "Mon Nov 11 2019"]      |
+| return age, year of remaining life expectancy,                                                                             |
+| and next year birthday on Mars                          | 1960, 8, 15, 80             | [245, 165, "Thu Jul 01 2021"]      |
+
+
 
 
 

@@ -36,10 +36,11 @@ export class myAge {
     let currentYear = yearInfo.getFullYear()
     let yourAge = parseInt((currentYear - this.year)/0.66); // it is the simplest calculation of age on Venus
     let yourExpectancy = parseInt(this.expectancy - yourAge);
+    let nextBirthday = new Date(currentYear, this.month - 1, this.day + 226)
     if (yourExpectancy >= 0) {
-      yourAgeInfo.push(yourAge, yourExpectancy);
+      yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
     } else {
-      yourAgeInfo.push(yourAge, Math.abs(yourExpectancy)); // for surpassed expectancy, the absolute value of year will be return.
+      yourAgeInfo.push(yourAge, Math.abs(yourExpectancy), nextBirthday.toDateString()); // for surpassed expectancy, the absolute value of year will be return.
     }
     return yourAgeInfo;
   }
@@ -49,7 +50,8 @@ export class myAge {
     let currentYear = yearInfo.getFullYear()
     let yourAge = parseInt((currentYear - this.year)/1.88); // it is the simplest calculation of age on Mars
     let yourExpectancy = parseInt(this.expectancy - yourAge);
-    yourAgeInfo.push(yourAge, yourExpectancy);
+    let nextBirthday = new Date(currentYear, this.month - 1, this.day + 686)
+    yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
     return yourAgeInfo;
   }
   getAgeJupiter() {
@@ -58,7 +60,8 @@ export class myAge {
     let currentYear = yearInfo.getFullYear()
     let yourAge = parseInt((currentYear - this.year)/11.86); // it is the simplest calculation of age on Jupiter
     let yourExpectancy = parseInt(this.expectancy - yourAge);
-    yourAgeInfo.push(yourAge, yourExpectancy);
+    let nextBirthday = new Date(currentYear, this.month - 1, this.day + 4329)
+    yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
     return yourAgeInfo;
   }
 }
