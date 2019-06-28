@@ -18,6 +18,11 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | based on life expectancy of Earth                       | 2000, 80                    | 79, 1                              |
 | return user's age on Mars and years left to live                                                                           |     
 | based on life expectancy of Earth                       | 2000, 80                    | 10, 70                             |
+| return user's age on Mercury and years left to live                                                                        |     
+| based on life expectancy of Earth                       | 1960, 80                    | 245, -165                          |
+| for surpassed expectancy, return absolute value of                                                                         |     
+| negative number for surpassed years                     | 2000, 80                    | 245, 165                           |
+
 
 
 

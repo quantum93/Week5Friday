@@ -17,7 +17,11 @@ export class myAge {
     let yearInfo = new Date(); //using built-in Date object in order to get time information on earth
     let yourAge = parseInt((yearInfo.getFullYear() - this.year)/0.24); // it is the simplest calculation of age on Mercury
     let yourExpectancy = parseInt(this.expectancy - yourAge);
-    yourAgeInfo.push(yourAge, yourExpectancy);
+    if (yourExpectancy >= 0) {
+      yourAgeInfo.push(yourAge, yourExpectancy);
+    } else {
+      yourAgeInfo.push(yourAge, Math.abs(yourExpectancy)); // for surpassed expectancy, the absolute value of year will be return.
+    }
     return yourAgeInfo;
   }
   getAgeVenus() {
@@ -25,7 +29,11 @@ export class myAge {
     let yearInfo = new Date(); //using built-in Date object in order to get time information on earth
     let yourAge = parseInt((yearInfo.getFullYear() - this.year)/0.66); // it is the simplest calculation of age on Venus
     let yourExpectancy = parseInt(this.expectancy - yourAge);
-    yourAgeInfo.push(yourAge, yourExpectancy);
+    if (yourExpectancy >= 0) {
+      yourAgeInfo.push(yourAge, yourExpectancy);
+    } else {
+      yourAgeInfo.push(yourAge, Math.abs(yourExpectancy)); // for surpassed expectancy, the absolute value of year will be return.
+    }
     return yourAgeInfo;
   }
   getAgeMars() {

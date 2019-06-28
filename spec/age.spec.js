@@ -6,11 +6,14 @@ describe('age on earth and life expectancy from your year of birth', function() 
   it('should test whether myAge.getAgeEarth propertis are functioning properly', function() {
     expect(testObj.getAgeEarth()).toEqual([59, 21]);
   });
-  it('should test whether myAge.getAgeMercury propertis are functioning properly', function() {
-    expect(testObj.getAgeMercury()).toEqual([245, -165]);
-  });
+  // it('should test whether myAge.getAgeMercury propertis are functioning properly', function() {
+  //   expect(testObj.getAgeMercury()).toEqual([245, -165]);
+  // });
   it('should test whether myAge.getAgeMars propertis are functioning properly', function() {
     expect(testObj.getAgeMars()).toEqual([31, 49]);
+  });
+  it('should test whether myAge.getAgeMercury propertis are functioning properly', function() {
+    expect(testObj.getAgeMercury()).toEqual([245, 165]);
   });
   // it('should test whether a Haiku has three lines', function() {
   //   testObj.lineChecker();
