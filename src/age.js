@@ -9,10 +9,13 @@ export class myAge {
   getAgeVenus() {
   }
   getAgeEarth() {
-    let yearInfo = new Date();
-    let currentYear = yearInfo.getFullYear();
-    let yourAge = currentYear - this.year;
-    return yourAge;
+    let yourAgeInfo = [];
+    let yearInfo = new Date(); //using built-in Date object in order to get time information on earth
+    let currentYear = yearInfo.getFullYear(); // get the current year on earth only from verbose Date information
+    let yourAge = currentYear - this.year; // it is the simplest calculation of age based on year of birth
+    let yourExpectancy = this.expectancy - yourAge;
+    yourAgeInfo.push(yourAge, yourExpectancy);
+    return yourAgeInfo;
   }
   getAgeMars() {
   }
