@@ -1,19 +1,20 @@
-import { myDate } from './calendar.js';
-import './calendar.js';
+import { myDate } from './date.js';
+import './date.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css'; //The order of css file is important tooverride bootstrap
 
 $(document).ready(function() {
-  $('#calendar-form').submit(function(event) {
+  $('#age-on-earth').submit(function(event) {
     event.preventDefault();
-    let day  = $('#inputtedDate').val();
-    let month  = $('#inputtedMonth').val();
-    let year  = $('#inputtedYear').val();
-    let dayInfo = month + ' ' + day + ', ' + year;
-    // document.write(dayInfo);
-    let myDay = new myDate(dayInfo);
-    $('#solution').text(myDay.getMyDay() + " is the day of your date!");
+    let year = $('#inputYear').val();
+    let expectancy = $('#inputExpectancy').val();
+    let myAge = new myDate(year, expectancy);
+    $('#mercury').text(myAge.getMyAge() + " is the day of your date!");
+    $('#venus').text(myAge.getMyAge() + " is the day of your date!");
+    $('#earth').text(myAge.getMyAge() + " is the day of your date!");
+    $('#mars').text(myAge.getMyAge() + " is the day of your date!");
+    $('#jupiter').text(myAge.getMyAge() + " is the day of your date!");
   });
 });

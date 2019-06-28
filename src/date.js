@@ -1,15 +1,25 @@
 export class myDate {
-  constructor(dayInfo) {
-    this.dayInfo = dayInfo;
+  constructor(year, expectancy) {
+    this.year = year;
+    this.expectancy = expectancy;
   }
 
-  getMyDay() {
-    let result = new Date(this.dayInfo);
-    let dayNum = result.getDay();
-    let dayArr = {0:"Sunday", 1:"Monday", 2:"Tuesday", 3:"Wednesday", 4:"Thursday", 5:"Friday", 6:"Saturday"}
-    return dayArr[dayNum];
+  getAgeMercury() {
+  }
+  getAgeVenus() {
+  }
+  getAgeEarth() {
+  }
+  getAgeMars() {
+  }
+  getAgeJupiter() {
   }
 }
+
+// let result = new Date(this.dayInfo);
+// let dayNum = result.getMyAge();
+// let dayArr = {0:"Sunday", 1:"Monday", 2:"Tuesday", 3:"Wednesday", 4:"Thursday", 5:"Friday", 6:"Saturday"}
+// return dayArr[dayNum];
 
 // export function myDate(dayInfo) {
 //   this.dayInfo = dayInfo;

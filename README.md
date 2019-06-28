@@ -8,9 +8,12 @@
 A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. Write an application that determines a user’s age based on a planet’s solar years. I will use the Javascript Date object. I will not build a UI for this application. Instead, focus on thoroughly testing each piece of functionality. I will do at least one test for each spec and commit my specs before starting to code.
 
 ### Specs
-| Spec.                                               | Input                       | Output                          |
-| :-------------------------------------------------- | :-------------------------- | :------------------------------ |
-|            
+| Spec.                                                   | Input                       | Output                             |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| class with property with user's year of birth on Earth and life expectancy |          |                                    |
+| use input will be user's year of birth on Earth and that year's life expectancy |     |                                    |
+| return user's age on Earth                              | birth year: 1972            | 2019 - 1972 = 47 years old         |
+|
 
 
 
@@ -21,8 +24,6 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 2. run command at terminal (npm install)
 3. run command at terminal (npm run start)
 4. recommend Google Chrome for web browser.
-5.
-6. hit play button when ready
 
 ## Known Bugs
 * No known bugs at this time.
