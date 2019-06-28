@@ -14,7 +14,7 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | use input will be user's year of birth on Earth and that year's life expectancy |     |                                    |
 | return user's age on Earth                              | birth year: 1972            | 2019 - 1972 = 47 years old         |
 | return user's age on Earth and years left to live       | 2000, 80                    | 19, 61                             |
-| return user's age on Mercury and years left to live     |                             |                                    |     
+| return user's age on Mercury and years left to live                                                                        |     
 | based on life expectancy of Earth                       | 2000, 80                    | 79, 1                              |
 
 
