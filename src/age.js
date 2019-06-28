@@ -1,6 +1,8 @@
 export class myAge {
-  constructor(year, expectancy) {
+  constructor(year, month, day, expectancy) {
     this.year = year;
+    this.month = month;
+    this.day = day;
     this.expectancy = expectancy;
   }
 
@@ -9,7 +11,8 @@ export class myAge {
     let yearInfo = new Date(); //using built-in Date object in order to get time information on earth
     let yourAge = parseInt(yearInfo.getFullYear() - this.year); // it is the simplest calculation of age based on year of birth
     let yourExpectancy = parseInt(this.expectancy - yourAge);
-    yourAgeInfo.push(yourAge, yourExpectancy);
+    let nextBirthday = new Date(yearInfo.getFullYear(), this.month - 1, this.day + 365)
+    yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
     return yourAgeInfo;
   }
   getAgeMercury() {
