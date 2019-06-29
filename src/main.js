@@ -1,5 +1,5 @@
-import { myAge } from './age.js';
-import './age.js';
+import { myAge } from './test.js';
+import './test.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,9 +13,8 @@ $(document).ready(function() {
     let date = $('#inputDate').val();
     let expectancy = $('#inputExpectancy').val();
     let result = new myAge(year, month, date, expectancy);
-    $('#earth-age').text("On Earth, " + result.getAgeEarth()[0] + " years old");
-    $('#earth-expectancy').text(result.getAgeEarth()[1] + " left/surpassed years to live");
-    $('#earth-birthday').text(result.getAgeEarth()[2] + " will be your next birthday");
+    $('#earth-age').text(result.getAgeEarth());
+    document.write(result.getAgeEarth());
 
     // $('#mercury-age').text("On Mercury, " + result.getAgeMercury()[0] + " years old already");
     // $('#mercury-expectancy').text(result.getAgeMercury()[1] + " left/surpassed years to live");

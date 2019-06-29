@@ -10,13 +10,11 @@ export class myAge {
     let yourAgeInfo = [];
     let yearInfo = new Date();
     let currentYear = yearInfo.getFullYear();
-    console.log(currentYear);
     let yourAge = parseInt(currentYear - this.year);
     let yourExpectancy = parseInt(this.expectancy - yourAge);
-    let nextBirthday = new Date(currentYear, this.month - 1, this.date + 366); //next year is leap year so add 366 rather than 365
-    console.log(nextBirthday);
-    yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
-    return yourAgeInfo;
+    let nextBirthday = new Date(currentYear, this.month-1, this.date+366).toDateString();
+    yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday);
+    return nextBirthday;
   }
   // getAgeMercury() {
   //   let yourAgeInfo = [];
