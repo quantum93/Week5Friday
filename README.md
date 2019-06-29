@@ -12,22 +12,10 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | class with property with user's year of birth on Earth and life expectancy |          |                                    |
 | use input will be user's year of birth on Earth and that year's life expectancy |     |                                    |
-| return user's age on Earth                              | birth year: 1972            | 2019 - 1972 = 47 years old         |
-| return user's age on Earth and years left to live       | 2000, 80                    | 19, 61                             |
-| return user's age on Mercury and years left to live                                                                        |     
-| based on life expectancy of Earth                       | 2000, 80                    | 79, 1                              |
-| return user's age on Mars and years left to live                                                                           |     
-| based on life expectancy of Earth                       | 2000, 80                    | 10, 70                             |
-| return user's age on Mercury and years left to live                                                                        |     
-| based on life expectancy of Earth                       | 1960, 80                    | 245, -165                          |
-| for surpassed expectancy, return absolute value of                                                                         |     
-| negative number for surpassed years                     | 2000, 80                    | 245, 165                           |
-| return age, year of remaining life expectancy,                                                                             |
-| and next year birthday on earth                         | 1960, 8, 15, 80             | [59, 21, "Fri Aug 15 2020"]        |
-| return age, year of remaining life expectancy,                                                                             |
-| and next year birthday on Mercury                       | 1960, 8, 15, 80             | [245, 165, "Mon Nov 11 2019"]      |
-| return age, year of remaining life expectancy,                                                                             |
-| and next year birthday on Mars                          | 1960, 8, 15, 80             | [245, 165, "Thu Jul 01 2021"]      |
+| return user's age on Earth                              | 2000                        | 19 is your age on earth            |
+| return user's age on Earth with refactoring             | 2000                        | 19 is your age on earth            |
+|
+
 
 ## Setup/Installation Requirements
 

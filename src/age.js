@@ -1,67 +1,14 @@
 export class myAge {
-  constructor(year, month, date, expectancy) {
-    this.year = year;
-    this.month = month;
-    this.date = date;
-    this.expectancy = expectancy;
+  constructor(ageInfo) {
+    this.year = ageInfo[0];
+    this.month = ageInfo[1];
+    this.date = ageInfo[2];
+    this.expectancy = ageInfo[3];
+    this.currentYear = new Date().getFullYear();
+    this.birthday = new Date(this.year, this.month, this.date);
   }
-
-  getAgeEarth() {
-    let yourAgeInfo = [];
-    let yearInfo = new Date();
-    let currentYear = yearInfo.getFullYear();
-    let yourAge = parseInt(currentYear - this.year);
-    let yourExpectancy = parseInt(this.expectancy - yourAge);
-    let nextBirthday = new Date(currentYear, this.month-1, this.date+366).toDateString();
-    yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday);
-    return nextBirthday;
+  AgeEarth() {
+    const yourAge = this.currentYear - this.birthday.getFullYear();
+    return yourAge;
   }
-  // getAgeMercury() {
-  //   let yourAgeInfo = [];
-  //   let yeletarInfo = new Date();
-  //    currentYear = yearInfo.getFullYear();
-  //   let yourAge = parseInt((currentYear - this.year)/0.24);
-  //   let yourExpectancy = parseInt(this.expectancy - yourAge);
-  //   let nextBirthday = new Date(currentYear, this.month - 1, this.date + 88);
-  //   if (yourExpectancy >= 0) {
-  //     yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
-  //   } else {
-  //     yourAgeInfo.push(yourAge, Math.abs(yourExpectancy), nextBirthday.toDateString());
-  //   }
-  //   return yourAgeInfo;
-  // }
-  // getAgeVenus() {
-  //   let yourAgeInfo = [];
-  //   let yearInfo = new Date();
-  //   let currentYear = yearInfo.getFullYear();
-  //   let yourAge = parseInt((currentYear - this.year)/0.66);
-  //   let yourExpectancy = parseInt(this.expectancy - yourAge);
-  //   let nextBirthday = new Date(currentYear, this.month - 1, this.date + 226);
-  //   if (yourExpectancy >= 0) {
-  //     yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
-  //   } else {
-  //     yourAgeInfo.push(yourAge, Math.abs(yourExpectancy), nextBirthday.toDateString());
-  //   }
-  //   return yourAgeInfo;
-  // }
-  // getAgeMars() {
-  //   let yourAgeInfo = [];
-  //   let yearInfo = new Date();
-  //   let currentYear = yearInfo.getFullYear();
-  //   let yourAge = parseInt((currentYear - this.year)/1.88);
-  //   let yourExpectancy = parseInt(this.expectancy - yourAge);
-  //   let nextBirthday = new Date(currentYear, this.month - 1, this.date + 686);
-  //   yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
-  //   return yourAgeInfo;
-  // }
-  // getAgeJupiter() {
-  //   let yourAgeInfo = [];
-  //   let yearInfo = new Date();
-  //   let currentYear = yearInfo.getFullYear();
-  //   let yourAge = parseInt((currentYear - this.year)/11.86);
-  //   let yourExpectancy = parseInt(this.expectancy - yourAge);
-  //   let nextBirthday = new Date(currentYear, this.month - 1, this.date + 4329);
-  //   yourAgeInfo.push(yourAge, yourExpectancy, nextBirthday.toDateString());
-  //   return yourAgeInfo;
-  // }
 }
