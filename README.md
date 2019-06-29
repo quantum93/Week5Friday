@@ -29,13 +29,6 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | return age, year of remaining life expectancy,                                                                             |
 | and next year birthday on Mars                          | 1960, 8, 15, 80             | [245, 165, "Thu Jul 01 2021"]      |
 
-
-
-
-
-
-
-
 ## Setup/Installation Requirements
 
 1. To run this program, clone repository from this GitHub.
