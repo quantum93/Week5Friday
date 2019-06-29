@@ -17,7 +17,8 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | return user's age on each planet and life expectancy    | 2000, 80                    | 19, 79, 30, 10, 1                  |
 |                                                         |                             | 61, 1,  50, 70, 79                 |
 | return user's next birthday on earth                    | 2000, 8, 15, 80             | 2001, 8, 15                        |
-
+| return user's next birthday on earth                    | 2000, 8, 15, 80             | 2001, 8, 15 ~                      |
+| return user's next birthday on earth  with refactoring  | 2000, 8, 15, 80             | 2001, 8, 15 ~                      |
 
 
 ## Setup/Installation Requirements

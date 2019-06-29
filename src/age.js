@@ -27,14 +27,12 @@ export class myAge {
   }
   BirthPlanet() {
     const currentBirthday = new Date(this.currentYear, this.month-1, this.date);
+    let days = [366, 88, 226, 686, 4329];
+    const birthPlanets = [];
     const oneDay=1000*60*60*24;
-    const nextEarth = new Date(currentBirthday.getTime() +366*oneDay).toDateString();
-    const nextMercury = new Date(currentBirthday.getTime() +88*oneDay).toDateString();
-    const nextVenus = new Date(currentBirthday.getTime() +226*oneDay).toDateString();
-    const nextMars = new Date(currentBirthday.getTime() +686*oneDay).toDateString();
-    const nextJupiter = new Date(currentBirthday.getTime() +4329*oneDay).toDateString();
-    let birthPlanets = [nextEarth, nextMercury, nextVenus, nextMars, nextJupiter];
+    for (let i = 0; i < days.length; i++) {
+      birthPlanets.push(new Date(currentBirthday.getTime() + days[i]*oneDay).toDateString());
+    }
     return birthPlanets;
   }
-  
 }
