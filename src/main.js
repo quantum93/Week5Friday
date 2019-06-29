@@ -10,6 +10,8 @@ $(document).ready(function() {
     event.preventDefault();
     let ageInfo = [$('#inputYear').val(), $('#inputMonth').val(), $('#inputDate').val(), $('#inputExpectancy').val()];
     let result = new myAge(ageInfo);
-    $('#earth').text(result.AgeEarth() + " is your age on Earth");
+    $('#age').text(result.AgePlanet());
+    $('#exp').text(result.ExpPlanet());
+    $('#birth').text(result.BirthPlanet());
   });
 });
