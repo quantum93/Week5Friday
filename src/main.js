@@ -13,5 +13,7 @@ $(document).ready(function() {
     $('#age').text(result.AgePlanet());
     $('#exp').text(result.ExpPlanet());
     $('#birth').text(result.BirthPlanet());
+    $('#dogyear').text(result.DogYear());
+    $('#mayfly').text(result.MayFly());
   });
 });

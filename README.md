@@ -16,9 +16,13 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | return user's age on Earth with refactoring             | 2000                        | 19 is your age on earth            |
 | return user's age on each planet and life expectancy    | 2000, 80                    | 19, 79, 30, 10, 1                  |
 |                                                         |                             | 61, 1,  50, 70, 79                 |
-| return user's next birthday on earth                    | 2000, 8, 15, 80             | 2001, 8, 15                        |
-| return user's next birthday on earth                    | 2000, 8, 15, 80             | 2001, 8, 15 ~                      |
-| return user's next birthday on earth  with refactoring  | 2000, 8, 15, 80             | 2001, 8, 15 ~                      |
+| return user's next birthday on earth                    | 2000, 8, 15, 80             | ~ 2001, 8, 15                      |
+| return user's next birthday on earth                    | 2000, 8, 15, 80             | ~ 2001, 8, 15 ~                    |
+| return user's next birthday on earth  with refactoring  | 2000, 8, 15, 80             | ~ 2001, 8, 15 ~                    |
+| dog year on jupiter = ((2073 - year of birth)/11.86)*7  | 2000, 8, 15, 80             | ~ 43                               |
+| return user's age in life span of mayfly                | 2000, 8, 15, 80             | ~ 1997280                          |
+
+
 
 
 ## Setup/Installation Requirements

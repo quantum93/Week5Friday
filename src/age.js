@@ -5,7 +5,7 @@ export class myAge {
     this.date = ageInfo[2];
     this.expectancy = ageInfo[3];
     this.currentYear = new Date().getFullYear();
-    this.birthday = new Date(this.year, this.month-1, this.date);
+    this.birthday = new Date(this.year, this.month-1, this.date); //The month of javascript starts with 0 rather than 1.
     this.ageEarth = this.currentYear - this.birthday.getFullYear();
     this.ageMercury = parseInt((this.currentYear - this.birthday.getFullYear())/0.24);
     this.ageVenus = parseInt((this.currentYear - this.birthday.getFullYear())/0.62);
@@ -27,12 +27,20 @@ export class myAge {
   }
   BirthPlanet() {
     const currentBirthday = new Date(this.currentYear, this.month-1, this.date);
-    let days = [366, 88, 226, 686, 4329];
+    let days = [366, 88, 226, 686, 4329]; // The days of a year in each planet.
     const birthPlanets = [];
     const oneDay=1000*60*60*24;
     for (let i = 0; i < days.length; i++) {
       birthPlanets.push(new Date(currentBirthday.getTime() + days[i]*oneDay).toDateString());
     }
     return birthPlanets;
+  }
+  DogYear() {
+    const dogYearJupiter = parseInt(((2073 - this.year)/11.86)*7); //Simply, 1 human-year is 7 dog-year
+    return dogYearJupiter;
+  }
+  MayFly() {
+    const lifeSpan = parseInt((this.ageEarth*365*24*60)/5); //Simply, 1 human-year is 7 dog-year
+    return lifeSpan;
   }
 }
