@@ -5,7 +5,7 @@ export class myAge {
     this.date = ageInfo[2];
     this.expectancy = ageInfo[3];
     this.currentYear = new Date().getFullYear();
-    this.birthday = new Date(this.year, this.month-1, this.date); //The month of javascript starts with 0 rather than 1.
+    this.birthday = new Date(this.year, this.month, this.date); //The month of javascript starts with 0 rather than 1.
     this.ageEarth = this.currentYear - this.birthday.getFullYear();
     this.ageMercury = parseInt((this.currentYear - this.birthday.getFullYear())/0.24);
     this.ageVenus = parseInt((this.currentYear - this.birthday.getFullYear())/0.62);

@@ -9,7 +9,7 @@ h1 {
   text-align: center;
 }
 input[type=number] {
-  width: 50%;
+  width: 10%;
   padding: 12px 20px;
   margin: 8px 0;
   border: 2px solid red;
