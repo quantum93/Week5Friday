@@ -31,7 +31,11 @@ export class myAge {
     const birthPlanets = [];
     const oneDay=1000*60*60*24;
     for (let i = 0; i < days.length; i++) {
-      birthPlanets.push(new Date(currentBirthday.getTime() + days[i]*oneDay).toDateString());
+      if (this.month === "0" || this.month === "1") { // next year 2020 is leap year and so the Jan and Feb case will be calculated with 365 days
+        birthPlanets.push(new Date(currentBirthday.getTime() + days[i]*oneDay).toDateString());
+      } else { // next year 2020 is leap year and so other months except Jan and Feb case will be calculated with 366 days (leap year has 2/29)
+        birthPlanets.push(new Date(currentBirthday.getTime() + (days[i]+1)*oneDay).toDateString());
+      }
     }
     return birthPlanets;
   }

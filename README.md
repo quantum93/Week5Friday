@@ -23,6 +23,9 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | return user's age in life span of mayfly                | 2000, 8, 15, 80             | ~ 1997280                          |
 | polishing user interface result                         |                             |                                    |
 | image loading with webpack + image-webpack-loader       |                             |                                    |
+| bug fix for leap year issue (2020) in business logic    | 2000, Feb. 2,               | 2020, Feb, 2                       |
+|                                                         | 2000, Mar. 2,               | 2020, Mar, 2                       |
+
 
 
 ## Setup/Installation Requirements
