@@ -14,12 +14,6 @@ describe('life expectancy on planet from your year of birth', function() {
   });
 });
 
-describe('birthday on planet from your year of birth on earth', function() {
-  it('should test whether testObj.BirthPlanet result is functioning properly', function() {
-    expect(testObj.BirthPlanet()[0]).toEqual([Sat Aug 15 2020]);
-  });
-});
-
 // describe('life expectancy on planet from your year of birth', function() {
 //   it('should test whether testObj.BirthPlanet result is functioning properly', function() {
 //     expect(testObj.BirthPlanet()).toEqual([Sat Aug 15 2020,Sun Nov 10 2019,Sat Mar 28 2020,Thu Jul 01 2021,Sun Jun 22 2031]);
