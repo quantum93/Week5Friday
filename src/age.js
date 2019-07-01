@@ -26,8 +26,8 @@ export class myAge {
     return expPlanets;
   }
   BirthPlanet() {
-    const currentBirthday = new Date(this.currentYear, this.month-1, this.date);
-    let days = [366, 88, 226, 686, 4329]; // The days of a year in each planet.
+    const currentBirthday = new Date(this.currentYear, this.month, this.date);
+    let days = [365, 88, 226, 686, 4329]; // The days of a year in each planet.
     const birthPlanets = [];
     const oneDay=1000*60*60*24;
     for (let i = 0; i < days.length; i++) {

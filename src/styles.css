@@ -2,18 +2,48 @@ body {
   background-color: #7FDBFF;
 }
 
+.jumbotron {
+  background-image: url(planet.jpg);
+}
 h1, h2  {
   text-align: center;
+  color: white;
 }
 h1 {
-  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
 }
 input[type=number] {
-  width: 10%;
+  width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
   border: 2px solid red;
   border-radius: 4px;
-  background-color: black;
+  background-color: white;
+  color: black;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border-radius: 8px;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* media part should be always the end of styles.css in order to work well with other css actions. */
+@media screen and (min-width: 768px) {
+  .column {
+    width: 300px;
+    float: left;
+    padding: 20px;
+  }
 }

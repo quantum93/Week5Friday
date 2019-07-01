@@ -17,6 +17,7 @@ $(document).ready(function() {
     let expectancy = result.ExpPlanet();
     let birthday = result.BirthPlanet();
 
+    $(".hidden").show();
     for (let i = 0; i < planets.length; i++) {
       if (expectancy[i] < 0) {
         $("#" + planets[i]).text(planets[i] +":" + age[i] + ":" + Math.abs(expectancy[i]) + "years surpassed" + ":" + birthday[i]);

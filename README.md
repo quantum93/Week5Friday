@@ -22,8 +22,7 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 | dog year on jupiter = ((2073 - year of birth)/11.86)*7  | 2000, 8, 15, 80             | ~ 43                               |
 | return user's age in life span of mayfly                | 2000, 8, 15, 80             | ~ 1997280                          |
 | polishing user interface result                         |                             |                                    |
- 
-
+| image loading with webpack + image-webpack-loader       |                             |                                    |
 
 
 ## Setup/Installation Requirements
@@ -32,6 +31,7 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 2. run command at terminal (npm install)
 3. run command at terminal (npm run start)
 4. recommend Google Chrome for web browser.
+5. some version of OSX may raise errors with a missing libpng dependency (brew install libpng)
 
 ## Known Bugs
 * No known bugs at this time.
@@ -48,6 +48,7 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
   * eslint
   * webpack 4.19.1
   * html, uglifyjs, clean-webpack plugins
+  * image-webpack-loader (https://www.npmjs.com/package/image-webpack-loader)
 
 ## Support and contact details
 
