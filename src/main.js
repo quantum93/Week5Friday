@@ -18,9 +18,9 @@ $(document).ready(function() {
     let birthday = result.BirthPlanet();
 
     for (let i = 0; i < planets.length; i++) {
-      if (age[i] > expectancy[i]) {
-        $("#" + planets[i]).text(planets[i] +":" + age[i] + ":" + expectancy[i] + "years surpassed" + ":" + birthday[i]);
-      } else if (age[i] <= expectancy[i]) {
+      if (expectancy[i] < 0) {
+        $("#" + planets[i]).text(planets[i] +":" + age[i] + ":" + Math.abs(expectancy[i]) + "years surpassed" + ":" + birthday[i]);
+      } else {
         $("#" + planets[i]).text(planets[i] +":" + age[i] + ":" + expectancy[i] + "years to live" + ":" + birthday[i]);
       }
     }
