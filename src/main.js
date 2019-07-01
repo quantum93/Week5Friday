@@ -13,16 +13,17 @@ $(document).ready(function() {
 
     // All lines of below are related with User inferface issue and don't need to related with business logic after Test-driven process.
     let planets = ["Earth", "Mercury", "Venus", "Mars", "Jupiter"]
-    let messages = [" years to live and your birthday on ", " years surpassed and your birthday on "]
     let age = result.AgePlanet();
     let expectancy = result.ExpPlanet();
     let birthday = result.BirthPlanet();
 
-    $('#earth').text(planets[0] +":" + age[0] + " years old " + expectancy[0] + " years to live and your birthday on " + planets[0] + " is " + birthday[0]);
-    $('#mercury').text(planets[1] +":" + age[1] + " years old " + expectancy[1] + " years to live and your birthday on " + planets[1] + " is " + birthday[1]);
-    $('#venus').text(planets[2] +":" + age[2] + " years old " + expectancy[2] + " years to live and your birthday on " + planets[2] + " is " + birthday[2]);
-    $('#mars').text(planets[3] +":" + age[3] + " years old " + expectancy[3] + " years to live and your birthday on " + planets[3] + " is " + birthday[3]);
-    $('#jupiter').text(planets[4] +":" + age[4] + " years old " + expectancy[4] + " years to live and your birthday on " + planets[4] + " is " + birthday[4]);
+    for (let i = 0; i < planets.length; i++) {
+      if (age[i] > expectancy[i]) {
+        $("#" + planets[i]).text(planets[i] +":" + age[i] + ":" + expectancy[i] + "years surpassed" + ":" + birthday[i]);
+      } else if (age[i] <= expectancy[i]) {
+        $("#" + planets[i]).text(planets[i] +":" + age[i] + ":" + expectancy[i] + "years to live" + ":" + birthday[i]);
+      }
+    }
 
     $('#dogyear').text(result.DogYear() + " dog year old");
     $('#mayfly').text(result.MayFly() + " lifespan of mayfly");

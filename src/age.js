@@ -11,11 +11,11 @@ export class myAge {
     this.ageVenus = parseInt((this.currentYear - this.birthday.getFullYear())/0.62);
     this.ageMars = parseInt((this.currentYear - this.birthday.getFullYear())/1.88);
     this.ageJupiter = parseInt((this.currentYear - this.birthday.getFullYear())/11.86);
-    this.expEarth = this.expectancy - this.ageEarth;
-    this.expMercury = this.expectancy - this.ageMercury;
-    this.expVenus = this.expectancy - this.ageVenus;
-    this.expMars = this.expectancy - this.ageMars;
-    this.expJupiter = this.expectancy - this.ageJupiter;
+    this.expEarth = Math.abs(this.expectancy - this.ageEarth);
+    this.expMercury = Math.abs(this.expectancy - this.ageMercury);
+    this.expVenus = Math.abs(this.expectancy - this.ageVenus);
+    this.expMars = Math.abs(this.expectancy - this.ageMars);
+    this.expJupiter = Math.abs(this.expectancy - this.ageJupiter);
   }
   AgePlanet() {
     let agePlanets = [this.ageEarth, this.ageMercury, this.ageVenus, this.ageMars, this.ageJupiter];
